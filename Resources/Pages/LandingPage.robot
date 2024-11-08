@@ -27,7 +27,7 @@ ${POPUP_SELECTOR}                           xpath=//div[@class="modal-content"]
 *** Keywords ***
 
 Start Browser
-    New Browser    browser=${BROWSER}    headless=${IS_HEADLESS}
+    New Browser    browser=${BROWSER}    headless=${IS_HEADLESS}      timeout=5s
     New Page       ${BASE_URL}
 
 Quando o cadastro for preenchido
